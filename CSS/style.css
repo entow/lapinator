@@ -1,0 +1,262 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.container .container-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: white;
+  z-index: 2;
+}
+
+.container .container-left nav {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .container-left nav img {
+  height: 50px;
+  margin-top: 15px;
+  width: auto;
+}
+
+ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 25;
+}
+
+ul li li a:hover {
+  color: blue;
+}
+
+ul li li a {
+  text-decoration: none;
+  color: black;
+}
+
+li.active {
+  border-bottom: 2px solid;
+  color: blue;
+}
+
+svg {
+  margin: 4px 20px 2px 20px;
+}
+
+section {
+  margin-left: 8%;
+  font-family: 'Roboto', sans-serif;
+}
+
+section .lapinator-title {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+section .lorem {
+  font-size: 17px;
+}
+
+section .mdp {
+  font-size: 12px;
+  margin-left: 30%;
+}
+
+.radius {
+  height: 58px;
+  width: 150%;
+  margin: 10px;
+  background-color: white;
+  border-radius: 29px;
+  -webkit-box-shadow: 0 2px 50px rgba(50, 50, 50, 0.5);
+          box-shadow: 0 2px 50px rgba(50, 50, 50, 0.5);
+}
+
+.radius .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  height: 100%;
+  width: 110%;
+}
+
+.radius .form .input {
+  font-family: 'Roboto', sans-serif;
+  height: 58px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 80%;
+  font-size: 18px;
+}
+
+.radius .form .input:focus {
+  background-color: lightgrey;
+  color: solid rgba(0, 0, 0, 0.39);
+}
+
+.radius .form .bouton {
+  background-color: #1fbbd4;
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 29px;
+  text-align: center;
+}
+
+.container-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-image: url("../image/Hamster.jpg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 765px) {
+  .container-left {
+    background-image: url("../image/group.svg");
+    background-size: cover;
+  }
+  .container-left nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container-left nav .img {
+    margin: auto 0;
+    z-index: 2;
+    background-color: #CCFFF4;
+  }
+  .container-left nav ul {
+    display: none;
+  }
+  .container-left nav svg {
+    margin: auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 0;
+    z-index: 2;
+    background-color: #CCFFF4;
+  }
+  .container-left nav .burger-mobile {
+    z-index: 1;
+    background-color: #fff;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: fixed;
+    margin-top: 70px;
+    width: 100%;
+  }
+  .container-left nav .burger-mobile ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-left nav .burger-mobile ul li {
+    margin: 20px;
+    text-transform: uppercase;
+  }
+  .container-left section {
+    margin: 5%;
+  }
+  .container-left section .lorem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  .container-left section .lapinator-title {
+    text-align: center;
+  }
+  .container-left section .radius {
+    margin: 0%;
+    width: 100%;
+    margin-bottom: 120px;
+  }
+  .container-left section .radius input {
+    width: 70%;
+  }
+  .container-left section .radius .bouton {
+    margin: 30px auto;
+  }
+  .container-left section .radius .form {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .container-left section .radius .form svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4px 10px;
+  }
+  .container-left section .radius .form input {
+    margin-left: 5px;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
